@@ -62,5 +62,14 @@
     "e2e-ci--**/*": {
       "dependsOn": ["^build"]
     }
+  },
+  "tasksRunnerOptions": {
+    "default":{
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "accessToken": "NjY4OWQwN2ItNTczZS00ZGZjLTg3MTUtZGU2YWM1M2FhYmExfHJlYWQtd3JpdGU=",
+        "cacheableOperations": ["build","lint","build-android","build-ios"]
+      }
+    }
   }
 }
